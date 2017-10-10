@@ -29,3 +29,15 @@ public class ServletInitializer extends SpringBootServletInitializer{
 将war包拷贝至tomcat安装目录的webapp下，启动tomcat自动解压并部署<br>
 `注意：关闭tomcat后才能将war包删除，若在启动时将war删除，关闭tomcat后解压后的项目也会删除。`
 
+=
+
+### 强制修改github自动识别的项目语言类型<br>
+步骤
+	1）打开控制台，cd 到项目根目录，输入命令
+		`touch .gitattributes`
+	项目的根目录就多出了一个`.gitattribute`文件
+	2）用文本编辑器打开`.gitattribute`文件，输入以下内容
+		`*.js linguist-language=Java  或者  * linguist-language=Java`
+	意思就是将.js 或者 所有 文件当作Java语言来统计，简单粗暴。
+	3）将项目提交到Github上，此时项目的语言标签就变成了Java。
+
