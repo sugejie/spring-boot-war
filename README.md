@@ -23,7 +23,7 @@ public class ServletInitializer extends SpringBootServletInitializer{
 }
 ```
 * 打包
-	* 方式一：双击IDEA右侧，Maven Projects > Lifecycle > package即可完成打包
+	* 方式一：双击IDEA右侧，Maven Projects -> Lifecycle -> package即可完成打包
 	* 方式二：切换至项目根目录，执行maven打包命令，mvn clean package -Dmaven.test.skip=true
 * 部署<br>
 将war包拷贝至tomcat安装目录的webapp下，启动tomcat自动解压并部署<br>
