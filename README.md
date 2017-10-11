@@ -36,7 +36,7 @@ public class ServletInitializer extends SpringBootServletInitializer{
 		`touch .gitattributes`<br>
 	项目的根目录就多出了一个`.gitattribute`文件<br>
 	2）用文本编辑器打开`.gitattribute`文件，输入以下内容<br>
-		`*.js linguist-language=Java  或者  * linguist-language=Java`<br>
+		`*.js linguist-language=Java`  或者  `* linguist-language=Java`<br>
 	意思就是将.js 或者 所有 文件当作Java语言来统计，简单粗暴。<br>
 	3）将项目提交到Github上，此时项目的语言标签就变成了Java。<br>
 
